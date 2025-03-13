@@ -17,6 +17,11 @@
 - `localhost:3010/user/:userId` | ID가 userId인 게시판에 오셨습니다. (동적 라우팅)
 - `localhost:3010/static/resource.html` | 정적 리소스에요 (정적 리소스)
 
+### 미들웨어 목록
+
+- `timestamp` : 콘솔에 타임스탬프 로그
+- `noexist` : 존재하지 않는 경로(404)에 대한 response 반환
+
 ---
 
 #### Router 메서드 기본

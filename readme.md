@@ -1,6 +1,6 @@
 ## express 서버 기초 연습
 
-![250313-s](https://github.com/user-attachments/assets/df931594-57cf-4ca6-b1bc-7a53a6ef3f3b)
+![250313-ss](https://github.com/user-attachments/assets/1a05fdca-0b6c-4db5-9b9e-8373ad12b308)
 
 ---
 

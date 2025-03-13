@@ -19,13 +19,13 @@
 - `localhost:3010/board/:boardId` | ID가 boardId인 게시판에 오셨습니다. (동적 라우팅)
 - `localhost:3010/user` | 이곳은 user 경로입니다
 - `localhost:3010/user/:userId` | ID가 userId인 게시판에 오셨습니다. (동적 라우팅)
-- `localhost:3010/static/resource.html` | 정적 리소스에요 (정적 리소스)
-- `localhost:3010/noexistpage123` | 존재하지 않는 페이지 (noexist 미들웨어)
+- `localhost:3010/public/static.html` | 정적 리소스에요 (정적 리소스)
+- `localhost:3010/noexistpage123` | 존재하지 않는 페이지 (notfound 미들웨어)
 
 ### 미들웨어 목록
 
-- `timestamp` : 콘솔에 타임스탬프 로그
-- `noexist` : 존재하지 않는 경로(404)에 대한 response 반환
+- `timestamp` : 콘솔에 타임스탬프 로그를 찍음
+- `notfound` : 존재하지 않는 경로(404)에 대한 response 반환
 
 ---
 

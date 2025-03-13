@@ -1,5 +1,9 @@
 ## express 서버 기초 연습
 
+![250313-s](https://github.com/user-attachments/assets/df931594-57cf-4ca6-b1bc-7a53a6ef3f3b)
+
+---
+
 ### 연습하려는 것
 
 - Router (맵핑)

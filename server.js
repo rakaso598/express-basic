@@ -5,6 +5,7 @@ const server = express();
 const PORT = 3010;
 
 server.use(indexRouter);
+server.use("/static", express.static("./src/public"));
 
 server.listen(PORT, () => {
   console.log(`${PORT} 서버 실행중!`);

@@ -10,4 +10,5 @@ boardRouter.get("/:boardId", (req, res) => {
   const boardId = req.params.boardId;
   res.send(`ID가 ${boardId}인 게시판에 오셨습니다.`);
 });
+
 export default boardRouter;

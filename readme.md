@@ -6,7 +6,7 @@
 - 동적 라우팅
 - 정적 리소스 라우팅
 - Middleware
-- 미들웨어 에러처리
+- 에러처리 미들웨어
 
 ### 경로 목록
 
@@ -16,6 +16,7 @@
 - `localhost:3010/user` | 이곳은 user 경로입니다
 - `localhost:3010/user/:userId` | ID가 userId인 게시판에 오셨습니다. (동적 라우팅)
 - `localhost:3010/static/resource.html` | 정적 리소스에요 (정적 리소스)
+- `localhost:3010/noexistpage123` | 존재하지 않는 페이지 (noexist 미들웨어)
 
 ### 미들웨어 목록
 
@@ -34,6 +35,12 @@
 #### Middleware 함수 기본
 
 - function middleware(req, res, next) { console.log("미들웨어입니다"); next(); }
+
+---
+
+#### 에러처리 미들웨어 함수 기본
+
+- function middleware(error, req, res, next) { console.log("에러 발생!", error.message); res.status(500).send("서버에서 에러가 발생했어요."); }
 
 ---
 

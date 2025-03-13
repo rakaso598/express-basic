@@ -1,14 +1,14 @@
 import express from "express";
-import indexRouter from "./src/modules/indexModule.js";
-import noexist from "./src/middlewares/noexist.js";
-import errorHandling from "./src/middlewares/errorHandling.js";
+import indexRouter from "./modules/indexModule.js";
+import notfound from "./middlewares/notfound.js";
+import errorHandling from "./middlewares/errorHandling.js";
 
 const server = express();
 const PORT = 3010;
 
 server.use(indexRouter);
 server.use("/static", express.static("./src/public"));
-server.use(noexist);
+server.use(notfound);
 server.use(errorHandling);
 
 server.listen(PORT, () => {

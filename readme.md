@@ -21,17 +21,17 @@
 
 #### Router 메서드 기본
 
-router.get("요청경로", (res, req)=> { res.send(...) })
-router.use("요청경로", 미들웨어1, 미들웨어2, 미들웨어3, 미들웨어4, ...)
+- router.get("요청경로", (res, req)=> { res.send(...) })
+- router.use("요청경로", 미들웨어1, 미들웨어2, 미들웨어3, 미들웨어4, ...)
 
 ---
 
 #### Middleware 함수 기본
 
-function middleware(req, res, next) { console.log("미들웨어입니다"); next(); }
+- function middleware(req, res, next) { console.log("미들웨어입니다"); next(); }
 
 ---
 
 #### 정적 리소스 라우팅
 
-server.use("요청경로", express.static("정적 리소스의 경로"));
+- server.use("요청경로", express.static("정적 리소스의 경로"));
